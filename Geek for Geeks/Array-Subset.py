@@ -1,9 +1,11 @@
-def findUnion(self, a, b):        
-        new = set()
-        
-        for x in a:
-            new.add(x)
-        for x in b: 
-            new.add(x)
-        
-        return new
+from collections import Counter
+
+    #Function to check if a is a subset of b.
+def isSubset(self, a, b):
+    ca = Counter(a)
+    cb = Counter(b)
+    for x in cb:
+        if cb[x] > ca[x]:
+            return False
+    return True 
+    
