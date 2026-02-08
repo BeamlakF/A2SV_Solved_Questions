@@ -1,6 +1,4 @@
-def findUnion(self, a, b):
-        # code here
-        
+def findUnion(self, a, b):        
         new = set()
         
         for x in a:
