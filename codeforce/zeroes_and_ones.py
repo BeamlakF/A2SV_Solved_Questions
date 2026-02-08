@@ -1,0 +1,7 @@
+n = int(input().strip())
+s = input().strip()
+
+zeros = s.count('0')
+ones = s.count('1')
+
+print(abs(zeros - ones))
