@@ -1,4 +1,7 @@
-def countCharacters(self, words: List[str], chars: str) -> int:
+from collections import Counter
+from typing import List
+
+def countCharacters(self, words, chars: str) -> int:
         chars_count = Counter(chars)
         total_length = 0
         
