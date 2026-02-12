@@ -1,0 +1,17 @@
+def findDuplicate(self, paths):
+        content_map = {}
+        for path in paths:
+            parts = path.split(" ")
+            directory = parts[0]
+            for file in parts[1:]:
+                name, content = file.split("(")
+
+                full_path = directory + "/" + name
+                if content not in content_map:
+                    content_map[content] = []
+                content_map[content].append(full_path)
+            result = []
+        for file_list in content_map.values():
+            if len(file_list) > 1:
+                result.append(file_list)
+        return result
