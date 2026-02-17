@@ -1,4 +1,4 @@
-def sumOfThree(self, num: int) -> List[int]:
+def sumOfThree(self, num: int):
         if num % 3 != 0:
             return []
         
