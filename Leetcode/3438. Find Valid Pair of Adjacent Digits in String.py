@@ -1,3 +1,6 @@
+from collections import Counter
+from itertools import pairwise
+
 def findValidPair(self, string: str) -> str:
         count = Counter(string)
 
