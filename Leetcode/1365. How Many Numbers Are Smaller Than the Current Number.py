@@ -1,4 +1,4 @@
-def smallerNumbersThanCurrent(self, nums: list[int]) -> list[int]:
+def smallerNumbersThanCurrent(self, nums):
         count =[]
         
         n = len(nums)
