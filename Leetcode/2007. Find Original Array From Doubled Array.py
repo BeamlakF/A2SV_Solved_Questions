@@ -1,4 +1,6 @@
-def findOriginalArray(self, changed: List[int]) -> List[int]:
+from collections import Counter
+
+def findOriginalArray(self, changed):
         if len(changed) % 2 != 0:
             return []
         
