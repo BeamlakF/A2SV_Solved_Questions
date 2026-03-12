@@ -1,0 +1,18 @@
+t = int(input())
+
+for _ in range(t):
+    n, k = map(int, input().split())
+    casinos = []
+    for _ in range(n):
+        l, r, real = map(int, input().split())
+        casinos.append((l, r, real))
+    
+    casinos.sort()   
+    
+    coins = k
+    for l, r, real in casinos:
+        if l <= coins <= r: # to check if it playable, then coins can be equal to real, real is the maximum thing given in the arrays
+            coins = real
+    
+    
+    print(coins)
