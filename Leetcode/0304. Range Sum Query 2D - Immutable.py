@@ -4,7 +4,6 @@ def __init__(self, matrix):
             
     rows, cols = len(matrix), len(matrix[0])
     self.prefix = [[0] * (cols + 1) for _ in range(rows + 1)]
-        
     for i in range(1, rows + 1):
         for j in range(1, cols + 1):
             self.prefix[i][j] = (matrix[i-1][j-1] 
