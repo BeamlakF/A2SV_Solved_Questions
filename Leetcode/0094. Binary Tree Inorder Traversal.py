@@ -7,7 +7,6 @@ def inorderTraversal(self, root):
             dfs(node.left)
             order.append(node.val)
             dfs(node.right)
-
             return
 
         dfs(root)
