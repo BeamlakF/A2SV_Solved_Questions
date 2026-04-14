@@ -1,5 +1,5 @@
-def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        res = ListNode(0, head)
+def removeElements(self, head, val: int) :
+        res = (0, head)
         dummy = res
 
         while dummy:
