@@ -1,3 +1,6 @@
+from collections import defaultdict
+from typing import List
+
 def subarraysWithKDistinct(self, nums: List[int], k: int) -> int:
         
         def atMostK(a, k):
