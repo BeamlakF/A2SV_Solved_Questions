@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 def subarraysDivByK(self, nums, k):
         count = defaultdict(int)
         count[0] = 1
