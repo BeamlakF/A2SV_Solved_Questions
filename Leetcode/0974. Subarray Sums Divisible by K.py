@@ -15,4 +15,15 @@ def subarraysDivByK(self, nums, k):
             res += count[rem]
             count[rem] += 1
         
-        return res  
+        return res
+
+# The TLE way:
+        count = 0
+        for i in range(len(nums)):
+            total = 0
+            for j in range(i, len(nums)):
+                total += nums[j]
+                if total % k == 0:
+                    count += 1
+
+        return count
