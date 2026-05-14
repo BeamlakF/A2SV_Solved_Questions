@@ -1,15 +1,15 @@
 from collections import deque
 
-class RecentCounter:
+def __init__(self):
+        self.queue = deque()
+        #intializing an empty queue
+        
 
-    def __init__(self):
-        self.q = deque()
+def ping(self, t: int) -> int:
+    self .queue.append(t)
+    # Adding the new ping to the back of the queue
+    while self. queue [0] < t - 3000:
+        self.queue.popleft()
+        #to remove the ones at from the window that is t -3000
 
-    def ping(self, t: int) -> int:
-        self.q.append(t)
-
-        # remove all pings older than t - 3000
-        while self.q and self.q[0] < t - 3000:
-            self.q.popleft()
-
-        return len(self.q)
+    return len(self.queue) 
